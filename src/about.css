@@ -1,0 +1,236 @@
+/* =========================================================
+   GLOBAL
+========================================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+
+/* =========================================================
+   BRAND COLORS
+========================================================= */
+
+:root {
+    --primary: blueviolet;
+    --primary-light: #F2EBFD;
+    --dark: #24163A;
+    --text-muted: #5F5867;
+    --white: #ffffff;
+}
+
+
+/* =========================================================
+   HERO SECTION
+========================================================= */
+
+.hero {
+    margin-top: 80px;
+    background-color: #F2EBFD;
+    padding: 80px 0;
+}
+
+
+/* =========================================================
+   ABOUT US CONTAINER
+========================================================= */
+
+.about-us {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 120px;
+    gap: 60px;
+}
+
+
+/* =========================================================
+   ABOUT US IMAGE
+========================================================= */
+
+.about-us-image {
+    width: 50%;
+}
+
+.about-us-image img {
+    width: 100%;
+    height: 450px;
+    display: block;
+    border-radius: 22px;
+    object-fit: cover;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+
+/* =========================================================
+   ABOUT US TEXT
+========================================================= */
+
+.about-us-text {
+    width: 50%;
+}
+
+.about-us-text h1 {
+    font-size: 60px;
+    line-height: 1.1;
+    margin: 0 0 25px;
+    color: var(--primary);
+    font-weight: 800;
+}
+
+.about-us-text p {
+    color: var(--text-muted);
+    font-size: 17px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+
+/* =========================================================
+   PARTNERS SECTION
+========================================================= */
+
+.partners {
+    padding: 90px 120px;
+    background-color: var(--white);
+    text-align: center;
+}
+
+
+/* =========================================================
+   PARTNERS HEADING
+========================================================= */
+
+.about-us-section h1 {
+    color: var(--dark);
+    font-size: 48px;
+    margin: 0 0 10px;
+}
+
+.about-us-section h3 {
+    color: var(--primary);
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 0 45px;
+}
+
+
+/* =========================================================
+   PARTNER LOGOS CONTAINER
+========================================================= */
+
+.about-us-b {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+
+/* =========================================================
+   PARTNER LOGO CARD
+========================================================= */
+
+.about-us-logo {
+    width: 180px;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    border: 1px solid #eadff8;
+    border-radius: 100%;
+    transition: 0.3s ease;
+    overflow: hidden;
+}
+
+.about-us-logo:hover {
+    transform: translateY(-5px);
+    border-color: var(--primary);
+    box-shadow: 0 10px 25px rgba(138, 43, 226, 0.12);
+}
+
+
+/* =========================================================
+   PARTNER LOGO IMAGE
+========================================================= */
+
+.logo-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* =========================================================
+   STATS SECTION
+========================================================= */
+
+.stats {
+    background-color: var(--primary);
+    padding: 80px 120px;
+}
+
+
+/* =========================================================
+   STATS CONTAINER
+========================================================= */
+
+.info {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+
+/* =========================================================
+   STAT COUNTER
+========================================================= */
+
+.counter {
+    flex: 1;
+    padding: 20px;
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.counter:last-child {
+    border-right: none;
+}
+
+
+/* =========================================================
+   STAT NUMBER
+========================================================= */
+
+.counter span {
+    display: block;
+    color: var(--white);
+    font-size: 55px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+
+/* =========================================================
+   STAT TITLE
+========================================================= */
+
+.counter h1 {
+    color: var(--white);
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0;
+}
