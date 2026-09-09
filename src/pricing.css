@@ -1,0 +1,139 @@
+/* =========================================================
+   GLOBAL
+========================================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+
+/* =========================================================
+   PRICING CONTAINER
+========================================================= */
+
+.pricing-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    max-width: 1200px;
+    margin: 140px auto;
+    gap: 30px;
+}
+
+
+/* =========================================================
+   PRICING CARDS
+========================================================= */
+
+.pricing-card {
+    width: 32%;
+    padding: 30px 25px;
+    background-color: #FFFFFF;
+    color: #24163A;
+    border-radius: 14px;
+    border-top: 6px solid blueviolet;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pricing-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =========================================================
+   STUDENT PRO HIGHLIGHT
+========================================================= */
+
+.pricing-card.basic {
+    background-color: #F2EBFD;
+    border-top-color: blueviolet;
+}
+
+
+/* =========================================================
+   PRICING TITLES
+========================================================= */
+
+.pricing-title {
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #24163A;
+}
+
+
+/* =========================================================
+   PRICING
+========================================================= */
+
+.pricing-price {
+    margin: 20px 0;
+    font-size: 36px;
+    font-weight: bold;
+    color: blueviolet;
+}
+
+
+/* =========================================================
+   FEATURES
+========================================================= */
+
+.features {
+    list-style: none;
+    padding: 0;
+    margin: 25px 0;
+}
+
+.features li {
+    margin: 10px 0;
+    font-size: 15px;
+    color: #5F5867;
+}
+
+
+/* =========================================================
+   BUTTONS
+========================================================= */
+
+.get-started {
+    padding: 12px 26px;
+    background-color: blueviolet;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.get-started:hover {
+    transform: scale(1.05);
+    background-color: #6A1FB3;
+}
+
+
+/* =========================================================
+   STUDENT PRO BUTTON
+========================================================= */
+
+.pricing-card.basic .get-started {
+    background-color: #24163A;
+}
+
+.pricing-card.basic .get-started:hover {
+    background-color: blueviolet;
+}
